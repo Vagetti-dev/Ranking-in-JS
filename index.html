@@ -68,7 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <script src="https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js">
     fetch("https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js", {
         headers: {
-            "User-Agent": "MyApp/1.0"
+            "User-Agent": "MyApp/1.0",
+            "Access-Control-Allow-Origin"  : "*",
+            "Access-Control-Allow-Methods" : "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers" : "Content-Type, Authorization"
         }
     })
     .then(response => response.json())
