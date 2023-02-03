@@ -16,8 +16,9 @@ document.querySelector("#form-novo-jogador").addEventListener("submit", event =>
                     "Content-Type": "application/json"
                 }
             })
-                 .then(() => alert("Jogador adicionado com sucesso!"))
-                .catch(() => alert("Erro ao adicionar jogador."));
+            
+            .then(() => alert("Jogador adicionado com sucesso!"))
+            .catch(() => alert("Erro ao adicionar jogador."));
         });
     }
 );
