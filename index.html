@@ -65,7 +65,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
     
-<script src="https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js"></script>
+<script src="https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js">
+    fetch("https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js", {
+        headers: {
+            "User-Agent": "MyApp/1.0"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log(data);
+        
+    });
+    
+</script>
     
 </body>
 </html>
