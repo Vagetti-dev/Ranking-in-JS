@@ -4,7 +4,7 @@ document.querySelector("#form-novo-jogador").addEventListener("submit", event =>
     const nomeJogador = document.querySelector("#nome-jogador").value;
     const pontosJogador = document.querySelector("#pontos-jogador").value;
 
-    fetch("https://ranking-in.vercel.app//api/put-ranking", {
+    fetch("https://ranking-in.vercel.app/api/put-ranking", {
     method: "POST",
     body: JSON.stringify({ "nome": nomeJogador, "pontos": pontosJogador }),
     headers: {
