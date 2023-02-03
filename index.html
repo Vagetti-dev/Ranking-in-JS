@@ -36,7 +36,7 @@
         
       <br><br>
         
-      <button type="submit">Adicionar Jogador</button>
+      <button type="submit" id="submit-button">Adicionar Jogador</button>
     </form>
     
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -44,7 +44,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const playerNameInput = document.getElementById("player-name");
   const playerScoreInput = document.getElementById("player-score");
-  const submitButton = document.getElementById("submit");
+  const submitButton = document.getElementById("submit-button");
 
     submitButton.addEventListener("click", function() {
     const playerName = playerNameInput.value;
