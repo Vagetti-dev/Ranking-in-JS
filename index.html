@@ -39,5 +39,31 @@
       <button type="submit">Adicionar Jogador</button>
     </form>
     
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const playerNameInput = document.getElementById("player-name");
+  const playerScoreInput = document.getElementById("player-score");
+  const submitButton = document.getElementById("submit-button");
+
+  submitButton.addEventListener("click", function() {
+    const playerName = playerNameInput.value;
+    const playerScore = playerScoreInput.value;
+
+    axios.post("https://ranking-in-js.vercel.app/ranking.js", {
+      name: playerName,
+      score: playerScore
+    })
+    .then(function (response) {
+      console.log(response);
+      location.reload();
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+  });
+});
+</script>
+    
 </body>
 </html>
