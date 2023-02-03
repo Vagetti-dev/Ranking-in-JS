@@ -1,3 +1,5 @@
+//Teste de uso para aprender sobre requisições usando o Jquery
+
 $(document).ready(function() {
     // Carregar informações do banco de dados JSON
     $.getJSON("ranking.json", function(data) {
@@ -14,7 +16,7 @@ $(document).ready(function() {
       }
     })
 
-      // Adicionar informações de um novo jogador ao banco de dados JSON
+    // Adicionar informações de um novo jogador ao banco de dados JSON
     $("#add-player-form").submit(function(event) {
         event.preventDefault();
         var playerName = $("#player-name").val();
