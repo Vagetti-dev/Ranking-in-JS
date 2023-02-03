@@ -9,7 +9,7 @@ document.querySelector("#form-novo-jogador").addEventListener("submit", event =>
     body: JSON.stringify({ "nome": nomeJogador, "pontos": pontosJogador }),
     headers: {
         "Content-Type": "application/json"
-    }
+    } 
 })
     .then(response => response.json())
     .then(dados => alert(dados.body))
