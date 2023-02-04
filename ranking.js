@@ -28,9 +28,7 @@ $(document).ready(function() {
             contentType: "application/json",
             headers: {
                 "User-Agent": "MyApp/1.0",
-                "Access-Control-Allow-Origin"  : "*",
-                "Access-Control-Allow-Methods" : "GET, POST, PUT, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers" : "Content-Type, Authorization"
+                "Access-Control-Allow-Origin"  : "*"
             },
             success: function(data) {
                 location.reload();
