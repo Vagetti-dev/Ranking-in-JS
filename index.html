@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const playerScoreInput = document.getElementById("player-score");
   const submitButton = document.getElementById("submit-button");
 
-    submitButton.addEventListener("click", function() {
+  submitButton.addEventListener("click", function() {
     const playerName = playerNameInput.value;
     const playerScore = playerScoreInput.value;
 
@@ -54,17 +54,21 @@ document.addEventListener("DOMContentLoaded", function() {
       name: playerName,
       score: playerScore
     })
+      
     .then(function (response) {
       console.log(response);
       location.reload();
     })
+      
     .catch(function (error) {
       console.error(error);
     });
+      
   });
 });
 </script>
     
+<!-- 
 <script src="https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js">
     fetch("https://cors-anywhere.herokuapp.com/https://ranking-in-js.vercel.app/ranking.js", {
         headers: {
@@ -79,8 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(data);
         
     });
-    
+
 </script>
-    
+-->
+
 </body>
 </html>
