@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const playerName = playerNameInput.value;
     const playerScore = playerScoreInput.value;
 
-    axios.post("https://ranking-in-js.vercel.app/ranking.js", {
+    axios.post("https://ranking-in-js.vercel.app/ranking.json", {
       name: playerName,
       score: playerScore
     })
